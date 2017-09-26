@@ -1,21 +1,21 @@
 @extends('layout.app')
 @section('content')
 
-    <nav role="navigation">
+    <nav role="navigation" style="background-color: #122b40">
         <div class="nav-wrapper container">
-            <img src="{{('image/a.png')}}" height="60px" width="60px" class="brand-logo">
+            <img src="{{('image/logo.png')}}" height="60px" width="160px" class="brand-logo">
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Beranda</a></li>
-                <li><a href="#">Kegiatan</a></li>
-                <li><a href="#">Beasiswa</a></li>
+                <li><a href="#">Info</a></li>
                 <li><a href="#">Sarana dan Prasarana</a></li>
+                <li><a href="#">Tentang Jurusan</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
                 <li><a href="#">Beranda</a></li>
-                <li><a href="#">Kegiatan</a></li>
-                <li><a href="#">Beasiswa</a></li>
+                <li><a href="#">Info</a></li>
                 <li><a href="#">Sarana dan Prasarana</a></li>
+                <li><a href="#">Tentang Jurusan</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -24,18 +24,15 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <br><br>
-                <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+                <h1 class="header center" style="color: #ffffff;">JURUSAN TEKNIK INFORMATIKA</h1>
                 <div class="row center">
-                    <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-                </div>
-                <div class="row center">
-                    <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+                    <h5 class="header col s10 light" style="color: #ffffff">Universitas Negeri Surabaya</h5>
                 </div>
                 <br><br>
 
             </div>
         </div>
-        <div class="parallax"><img src="{{('image/komatik.png')}}" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 234px, 0px);"></div>
+        <div class="parallax"><img src="{{('image/d.jpg')}}" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 234px, 0px);"></div>
     </div>
     {{--<div class="section no-pad-bot" id="index-banner">--}}
         {{--<div class="container">--}}
@@ -61,28 +58,28 @@
             <div class="row">
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                        <h5 class="center">Speeds up development</h5>
+                        <h2 class="center light-blue-text"><i class="material-icons medium">school</i></h2>
+                        <h5 class="center">Info</h5>
 
-                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                        <p class="light">Temukan berbagai info mengenai akademik dan non akademik. Segala bentuk kerjasama mengenai Beasiswa serta kegiatan jurusan terdapat disini.</p>
                     </div>
                 </div>
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-                        <h5 class="center">User Experience Focused</h5>
+                        <h2 class="center light-blue-text"><i class="material-icons medium">location_city</i></h2>
+                        <h5 class="center">Sarana dan Prasana</h5>
 
-                        <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                        <p class="light">Jurusan Teknik Informatika memiliki berbagai saran dan prasarana yang memadai. Lihat segala fasilitas yang dapat anda nikmati di Jurusan Teknik Informatika Unesa</p>
                     </div>
                 </div>
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                        <h5 class="center">Easy to work with</h5>
+                        <h2 class="center light-blue-text"><i class="material-icons medium">assignment</i></h2>
+                        <h5 class="center">Tentang Jurusan</h5>
 
-                        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                        <p class="light">Temukan segala hal yang berkaitan mengenai jurusan maupun birokrasinya disini.</p>
                     </div>
                 </div>
             </div>
