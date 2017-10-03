@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('beranda');
 });
+Route::get('/beasiswa', function () {
+    return view('beasiswa');
+});
+
