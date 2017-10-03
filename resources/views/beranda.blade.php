@@ -1,19 +1,39 @@
 @extends('layout.app')
 @section('content')
 
-    <nav role="navigation" style="background-color: #2F4F4F">
+    <nav role="navigation" style="background-color: #02062c">
         <div class="nav-wrapper container">
             <img src="{{('image/ti.png')}}" height="70px" width="170px" class="brand-logo">
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Beranda</a></li>
-                <li><a href="#">Info</a></li>
+                <li>
+                    <a class="dropdown-button active" href="#!" data-activates="dropdown1">Info
+                        <i class="material-icons right">arrow_drop_down</i></a>
+                    <ul id="dropdown1" class="dropdown-content active" style="width: 135.012px; position: absolute; top: 0px; left: 446.725px; display: block; opacity: 1;">
+                        <li><a href="#!">Beasiswa</a></li>
+                        <li><a href="#!">Kegiatan</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Sarana dan Prasarana</a></li>
                 <li><a href="#">Tentang Jurusan</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
                 <li><a href="#">Beranda</a></li>
-                <li><a href="#">Info</a></li>
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-view-carousel"></i>Info</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#">Beasiswa</a>
+                                    </li>
+                                    <li><a href="#">Kegiatan</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
                 <li><a href="#">Sarana dan Prasarana</a></li>
                 <li><a href="#">Tentang Jurusan</a></li>
             </ul>
@@ -43,7 +63,7 @@
             <div class="row">
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center light-ikon-text"><i class="material-icons medium">school</i></h2>
+                        <h2 class="center light-blue-text"><i class="material-icons medium">school</i></h2>
                         <h5 class="center">Info</h5>
 
                         <p class="light">Temukan berbagai info mengenai akademik dan non akademik. Segala bentuk kerjasama mengenai Beasiswa serta kegiatan jurusan terdapat disini.</p>
@@ -52,7 +72,7 @@
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center light-ikon-text"><i class="material-icons medium">location_city</i></h2>
+                        <h2 class="center light-blue-text"><i class="material-icons medium">location_city</i></h2>
                         <h5 class="center">Sarana dan Prasana</h5>
 
                         <p class="light">Jurusan Teknik Informatika memiliki berbagai saran dan prasarana yang memadai. Lihat segala fasilitas yang dapat anda nikmati di Jurusan Teknik Informatika Unesa</p>
@@ -61,7 +81,7 @@
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center light-ikon-text"><i class="material-icons medium">assignment</i></h2>
+                        <h2 class="center light-blue-text"><i class="material-icons medium">assignment</i></h2>
                         <h5 class="center">Tentang Jurusan</h5>
 
                         <p class="light">Temukan segala hal yang berkaitan mengenai jurusan maupun birokrasinya disini.</p>
@@ -73,20 +93,20 @@
         <div class="section">
             <div class="row center">
                 <div class="col s6 ">
-                    <h3 class="light header">Beasiswa PPA</h3>
+                    <h5 class="light header">Beasiswa PPA</h5>
                     <p class="caption">
                         Beasiswa PPA 2017 dan BPP PPA 2017 ditujukan bagi mahasiswa aktif yang berada di jenjang S1/DIV atau mahasiswa D3. Ketentuan lebih lanjut tertera di persyaratan.</p>
                     <img width="100%" src={{("image/ppa.jpg")}} alt="">
                     <br><br>
-                    <a href="http://materializecss.com/themes.html" class="btn-large waves-effect waves-light" style="background-color: #2F4F4F">Baca</a>
+                    <a href="http://materializecss.com/themes.html" class="btn-large waves-effect waves-light" style="background-color: #03a9f4">Baca</a>
                 </div>
                 <div class="col s6 ">
-                    <h3 class="light header">Beasiswa BCA</h3>
+                    <h5 class="light header">Beasiswa BCA</h5>
                     <p class="caption">
-                        Dalam upaya memajukan dunia pendidikan di Indonesia, BCA turut memberikan beasiswa kepada mahasiswa/mahasiswi berprestasi yang sedang menempuh pendidikan di jenjang Sarjana semua jurusan di Pergurua Negeri maupun Swasta</p>
+                        Dalam upaya memajukan dunia pendidikan di Indonesia, BCA turut memberikan beasiswa kepada mahasiswa/mahasiswi berprestasi di bidangnya.</p>
                         <img width="100%" src={{("image/BCA.jpg")}} alt="">
                     <br><br>
-                    <a href="http://materializecss.com/themes.html" class="btn-large waves-effect waves-light" style="background-color: #2F4F4F">Baca</a>
+                    <a href="http://materializecss.com/themes.html" class="btn-large waves-effect waves-light" style="background-color: #03a9f4">Baca</a>
                 </div>
             </div>
         </div>
@@ -205,7 +225,7 @@
             </div>
         </div>
     </div>
-    <footer class="page-footer" style="background-color: #2F4F4F">
+    <footer class="page-footer orange">
         <div class="footer-copyright">
             <div class="container">
                 Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">S1 Teknik Informatika 2015</a>
