@@ -1,9 +1,9 @@
 @extends('layout.app')
 @section('content')
 
-    <nav role="navigation" style="background-color: #122b40">
+    <nav role="navigation" style="background-color: #02062c">
         <div class="nav-wrapper container">
-            <img src="{{('image/logo.png')}}" height="60px" width="160px" class="brand-logo">
+            <img src="{{('image/ti.png')}}" height="70px" width="170px" class="brand-logo">
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Beranda</a></li>
                 <li><a href="#">Info</a></li>
@@ -32,24 +32,8 @@
 
             </div>
         </div>
-        <div class="parallax"><img src="{{('image/d.jpg')}}" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 234px, 0px);"></div>
+        <div class="parallax"><img src="{{('image/unesa.jpg')}}" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 234px, 0px);"></div>
     </div>
-    {{--<div class="section no-pad-bot" id="index-banner">--}}
-        {{--<div class="container">--}}
-            {{--<br><br>--}}
-            {{--<h1 class="header center orange-text">Starter Template</h1>--}}
-            {{--<div class="row center">--}}
-                {{--<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>--}}
-            {{--</div>--}}
-            {{--<div class="row center">--}}
-                {{--<a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>--}}
-            {{--</div>--}}
-            {{--<br><br>--}}
-
-        {{--</div>--}}
-        {{--<div class="parallax"><img src="{{('image/komatik.png')}}" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 234px, 0px);"></div>--}}
-    {{--</div>--}}
-
 
     <div class="container">
         <div class="section">
@@ -58,7 +42,7 @@
             <div class="row">
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons medium">school</i></h2>
+                        <h2 class="center indigo-text.text-darken-4"><i class="material-icons medium">school</i></h2>
                         <h5 class="center">Info</h5>
 
                         <p class="light">Temukan berbagai info mengenai akademik dan non akademik. Segala bentuk kerjasama mengenai Beasiswa serta kegiatan jurusan terdapat disini.</p>
@@ -67,7 +51,7 @@
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons medium">location_city</i></h2>
+                        <h2 class="center blue-text.text-darken-4"><i class="material-icons medium">location_city</i></h2>
                         <h5 class="center">Sarana dan Prasana</h5>
 
                         <p class="light">Jurusan Teknik Informatika memiliki berbagai saran dan prasarana yang memadai. Lihat segala fasilitas yang dapat anda nikmati di Jurusan Teknik Informatika Unesa</p>
@@ -76,7 +60,7 @@
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons medium">assignment</i></h2>
+                        <h2 class="center light-blue.darken-4"><i class="material-icons medium">assignment</i></h2>
                         <h5 class="center">Tentang Jurusan</h5>
 
                         <p class="light">Temukan segala hal yang berkaitan mengenai jurusan maupun birokrasinya disini.</p>
@@ -85,9 +69,133 @@
             </div>
 
         </div>
-        <br><br>
+        <div class="section">
+            <div class="row center">
+                <h3 class="light header">Beasiswa PPA</h3>
+                <div class="col s12 m6 offset-m3">
+                    <p class="caption">
+                        Beasiswa PPA 2017 dan BPP PPA 2017 ditujukan bagi mahasiswa aktif yang berada di jenjang S1/DIV atau mahasiswa D3. Ketentuan lebih lanjut tertera di persyaratan.</p>
+                    <img width="100%" src={{("image/ppa.jpg")}} alt="">
+                    <br><br>
+                    <a href="http://materializecss.com/themes.html" class="btn-large waves-effect waves-light">Baca</a>
+                </div>
+            </div>
+        </div>
+        <div id="card-stats">
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src={{("image/masade.jpg")}} alt="blog-img">
+                        </div>
+                        <div class="card-content">
+                            <p class="row">
+                                <span><a href="">Penyerahan Tropi</a></span>
+                                <br>
+                                <span>18 Juni, 2015</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src={{("image/hmj.jpg")}} alt="blog-img">
+                        </div>
+                        <div class="card-content">
+                            <p class="row">
+                                <span><a href="">Kunjungan Kerja HMJ</a></span>
+                                <br>
+                                <span>20 November, 2016</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src={{("image/futsal.jpg")}} alt="blog-img">
+                        </div>
+                        <div class="card-content">
+                            <p class="row">
+                                <span><a href="">Futsal TI</a></span>
+                                <br>
+                                <span>15 Oktober 2016</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src={{("image/dialog.jpg")}} alt="blog-img">
+                        </div>
+                        <div class="card-content">
+                            <p class="row">
+                                <span><a href="">Dialog Jurusan</a></span>
+                                <br>
+                                <span>12 Februari 2017</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- blog card -->
+            <div class="col s12 m12 l4">
+                <div class="blog-card" >
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src={{("image/bi.jpg")}} alt="blog-img">
+                        </div>
+                        <div class="card-content">
+                            <p class="row">
+                                <span class="left"><a href="">Info</a></span>
+                                <span class="right">18th June, 2015</span>
+                            </p>
+                            <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">Beasiswa Bank Indonesia</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="blog-card" >
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src={{("image/ppa.jpg")}} alt="blog-img">
+                        </div>
+                        <div class="card-content">
+                            <p class="row">
+                                <span class="left"><a href="">Info</a></span>
+                                <span class="right">18th June, 2015</span>
+                            </p>
+                            <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">Beasiswa PPA</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="blog-card" >
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src={{("image/komatik.png")}} alt="blog-img">
+                        </div>
+                        <div class="card-content">
+                            <p class="row">
+                                <span class="left"><a href="">Info</a></span>
+                                <span class="right">18th June, 2015</span>
+                            </p>
+                            <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">Sosialisasi Komatik</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
     <footer class="page-footer orange">
         <div class="container">
             <div class="row">
