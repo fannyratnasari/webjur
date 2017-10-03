@@ -1,7 +1,7 @@
 @extends('layout.app')
 @section('content')
 
-    <nav role="navigation" style="background-color: #02062c">
+    <nav role="navigation" style="background-color: #2F4F4F">
         <div class="nav-wrapper container">
             <img src="{{('image/ti.png')}}" height="70px" width="170px" class="brand-logo">
             <ul class="right hide-on-med-and-down">
@@ -24,6 +24,7 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <br><br>
+                <br>
                 <h1 class="header center" style="color: #ffffff;">JURUSAN TEKNIK INFORMATIKA</h1>
                 <div class="row center">
                     <h5 class="header col s10 light" style="color: #ffffff">Universitas Negeri Surabaya</h5>
@@ -42,7 +43,7 @@
             <div class="row">
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center indigo-text.text-darken-4"><i class="material-icons medium">school</i></h2>
+                        <h2 class="center light-ikon-text"><i class="material-icons medium">school</i></h2>
                         <h5 class="center">Info</h5>
 
                         <p class="light">Temukan berbagai info mengenai akademik dan non akademik. Segala bentuk kerjasama mengenai Beasiswa serta kegiatan jurusan terdapat disini.</p>
@@ -51,7 +52,7 @@
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center blue-text.text-darken-4"><i class="material-icons medium">location_city</i></h2>
+                        <h2 class="center light-ikon-text"><i class="material-icons medium">location_city</i></h2>
                         <h5 class="center">Sarana dan Prasana</h5>
 
                         <p class="light">Jurusan Teknik Informatika memiliki berbagai saran dan prasarana yang memadai. Lihat segala fasilitas yang dapat anda nikmati di Jurusan Teknik Informatika Unesa</p>
@@ -60,7 +61,7 @@
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center light-blue.darken-4"><i class="material-icons medium">assignment</i></h2>
+                        <h2 class="center light-ikon-text"><i class="material-icons medium">assignment</i></h2>
                         <h5 class="center">Tentang Jurusan</h5>
 
                         <p class="light">Temukan segala hal yang berkaitan mengenai jurusan maupun birokrasinya disini.</p>
@@ -71,13 +72,21 @@
         </div>
         <div class="section">
             <div class="row center">
-                <h3 class="light header">Beasiswa PPA</h3>
-                <div class="col s12 m6 offset-m3">
+                <div class="col s6 ">
+                    <h3 class="light header">Beasiswa PPA</h3>
                     <p class="caption">
                         Beasiswa PPA 2017 dan BPP PPA 2017 ditujukan bagi mahasiswa aktif yang berada di jenjang S1/DIV atau mahasiswa D3. Ketentuan lebih lanjut tertera di persyaratan.</p>
                     <img width="100%" src={{("image/ppa.jpg")}} alt="">
                     <br><br>
-                    <a href="http://materializecss.com/themes.html" class="btn-large waves-effect waves-light">Baca</a>
+                    <a href="http://materializecss.com/themes.html" class="btn-large waves-effect waves-light" style="background-color: #2F4F4F">Baca</a>
+                </div>
+                <div class="col s6 ">
+                    <h3 class="light header">Beasiswa BCA</h3>
+                    <p class="caption">
+                        Dalam upaya memajukan dunia pendidikan di Indonesia, BCA turut memberikan beasiswa kepada mahasiswa/mahasiswi berprestasi yang sedang menempuh pendidikan di jenjang Sarjana semua jurusan di Pergurua Negeri maupun Swasta</p>
+                        <img width="100%" src={{("image/BCA.jpg")}} alt="">
+                    <br><br>
+                    <a href="http://materializecss.com/themes.html" class="btn-large waves-effect waves-light" style="background-color: #2F4F4F">Baca</a>
                 </div>
             </div>
         </div>
@@ -196,38 +205,10 @@
             </div>
         </div>
     </div>
-    <footer class="page-footer orange">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Company Bio</h5>
-                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Settings</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Connect</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <footer class="page-footer" style="background-color: #2F4F4F">
         <div class="footer-copyright">
             <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">S1 Teknik Informatika 2015</a>
             </div>
         </div>
     </footer>
